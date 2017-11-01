@@ -1,7 +1,12 @@
 <body>
     <h1>Niner Picks</h1>
+
+    <%= link_to 'Create Poll', new_poll_path %>
+    <%= link_to 'View Polls', controller: 'polls' %>
+    <%= link_to 'Enter Poll ID', controller: 'polls' %>
     
     <table align="center">
+        <caption>Featured Polls</caption>
         <tr>
             <th>New</th>
             <th>Poll Name</th>

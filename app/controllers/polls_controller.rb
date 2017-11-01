@@ -1,9 +1,15 @@
 class PollsController < ApplicationController
     def index
-        @polls = Polls.all
+        @polls = 0#Polls.all
+    end
+        
+    def show
+        
     end
     
     def new
-        @poll = Poll.new
+    end
+    
+    def create
     end
 end
