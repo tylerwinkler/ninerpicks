@@ -14,40 +14,14 @@
             <th>Date Created</th>
             <th></th>
         </tr>
-        <tr>
-            <td>*</td>
-            <td>First Poll</td>
-            <td>Tyler</td>
-            <td>11/1/2017 1:55 PM</td>
-            <td>Take Poll</td>
-        </tr>
-        <tr>
-            <td>*</td>
-            <td>Second Poll</td>
-            <td>Tyler</td>
-            <td>11/1/2017 1:55 PM</td>
-            <td>Take Poll</td>
-        </tr>
-        <tr>
-            <td>*</td>
-            <td>Third Poll</td>
-            <td>Tyler</td>
-            <td>11/1/2017 1:55 PM</td>
-            <td>Take Poll</td>
-        </tr>
-        <tr>
-            <td>*</td>
-            <td>Fourth Poll</td>
-            <td>Tyler</td>
-            <td>11/1/2017 1:55 PM</td>
-            <td>Take Poll</td>
-        </tr>
-        <tr>
-            <td>*</td>
-            <td>Fifth Poll</td>
-            <td>Tyler</td>
-            <td>11/1/2017 1:55 PM</td>
-            <td>Take Poll</td>
-        </tr>
+        <% @featured_polls.each do |poll| %>
+            <tr>
+                <td>*</td>
+                <td><%= poll.name %></td>
+                <td>Tyler</td>
+                <td>11/1/2017 1:55 PM</td>
+                <td>Take Poll</td>
+            </tr>
+        <% end %>
     </table>
 </body>

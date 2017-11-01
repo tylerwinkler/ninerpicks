@@ -1,6 +1,6 @@
 class PollsController < ApplicationController
     def index
-        @polls = 0#Polls.all
+        @polls = Poll.all
     end
         
     def show

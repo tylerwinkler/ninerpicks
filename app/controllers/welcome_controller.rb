@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @featured polls = Polls.sample(5)
+    @featured_polls = Poll.all.sample(10)
   end
 end
