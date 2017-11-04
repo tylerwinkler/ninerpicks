@@ -1,27 +1,71 @@
-<body>
-    <h1>Niner Picks</h1>
+<!doctype html>
 
-    <%= link_to 'Create Poll', new_poll_path %>
-    <%= link_to 'View Polls', controller: 'polls' %>
-    <%= link_to 'Enter Poll ID', controller: 'polls' %>
+<html>
+    <head>
+        <title>Niner Picks</title>
+        <%= render partial: 'bootstrap' %>
+    </head>
     
-    <table align="center">
-        <caption>Featured Polls</caption>
-        <tr>
-            <th>New</th>
-            <th>Poll Name</th>
-            <th>Poll Author</th>
-            <th>Date Created</th>
-            <th></th>
-        </tr>
-        <% @featured_polls.each do |poll| %>
-            <tr>
-                <td>*</td>
-                <td><%= poll.name %></td>
-                <td>Tyler</td>
-                <td>11/1/2017 1:55 PM</td>
-                <td>Take Poll</td>
-            </tr>
-        <% end %>
-    </table>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Niner Picks</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <%= link_to 'Create Poll', new_poll_path, :class => "btn btn-lg btn-default", :type => "btn" %>
+            </div>
+            <div class="col">
+                <%= link_to 'View Polls', polls_path, :class => "btn btn-lg btn-default", :type => "btn" %>
+            </div>
+            <div class="col">
+                <%= link_to 'Enter Poll ID', poll_path(1), :class => "btn btn-lg btn-default", :type => "btn" %>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <table align="center">
+                    <tr>
+                        <th colspan="6">Featured Polls</th>
+                    </tr>
+                    <tr>
+                        <th>New</th>
+                        <th>Poll Name</th>
+                        <th>Poll Author</th>
+                        <th>Date Created</th>
+                        <th>Total Votes</th>
+                        
+                    </tr>
+                    <% @featured_polls.each do |poll| %>
+                        <tr>
+                            <td>*</td>
+                            <td>Poll Title</td>
+                            <td>Owner/Author Name</td>
+                            <td>Creation Date</td>
+                            <td>Total Votes</td>
+                            <td>
+                                <%= link_to 'Take Poll', poll_path(poll.id), :class => "btn btn-primary", :type => "btn" %>
+                                <%= link_to 'Delete Poll', {:controller=> "polls", :action => "destroy", :id=>poll.id}, :method => 'delete', :class => "btn btn-primary", :type => "btn" %>
+                            </td>
+                        </tr>
+                    <% end %>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
+</html>
+
+<!--
+
+<td><#%= poll.title %></td>
+<td><#%= poll.owner.name %></td>
+<td><#%= poll.creation_date %></td>
+<td><#%= poll.total_votes %></td>
+
+
+-->

@@ -14,26 +14,44 @@
  *= require_self
  */
 
-html
-{
-    background-color: #243;
-}
+$bg-color: #131;
+$bg-color-light: lighten($bg-color, 5%);
+
+$text-color: darken(gold, 10%);
+$border-color: $text-color;
 
 body
 {
-    width: 960px; /* This is temporary. Remove this and go with responsive design*/
-    margin: 0px auto;
-    text-align: center;
-    min-height: 500px;
-    
-    background-color: #354;
-    color: #CB3;
+    background-color: black !important;
+    color: $text-color;
 }
 
-table, th, td
+.container
 {
-    border: solid 1px black;
+    background-color: $bg-color-light;
+    color: $text-color;
+    border: solid 1px $border-color;
+    text-align: center;
+}
+
+.btn-default
+{
+    background-color: $bg-color ;
+    border-color: $border-color ;
+    color: $text-color;
+}
+
+.btn-default:hover
+{
+    background-color: lighten($bg-color, 10%);
+    border-color: lighten($border-color, 10%);
+    color: lighten($text-color, 10%);
+}
+
+table, td, th
+{
     border-collapse: collapse;
+    border: solid 1px $border-color;
 }
 
 th
@@ -43,28 +61,5 @@ th
 
 td
 {
-    padding: 5px;
-}
-
-tr:nth-child(even)
-{
-    background-color: #454
-    
-}
-
-tr:hover
-{
-    background-color: #080;
-}
-
-a, a:visited
-{
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #143;
-    display: inline-block;
-    border: solid 1px black;
-    margin: 5px 10px;
-    margin-top: 0px;
+    padding: 10px;
 }
