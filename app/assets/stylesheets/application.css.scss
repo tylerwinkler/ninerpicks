@@ -14,7 +14,7 @@
  *= require_self
  */
 
-$bg-color: #131;
+$bg-color: #243;
 $bg-color-light: lighten($bg-color, 5%);
 
 $text-color: darken(gold, 10%);
@@ -22,8 +22,9 @@ $border-color: $text-color;
 
 body
 {
-    background-color: black !important;
+    background-color: $bg-color !important;
     color: $text-color;
+    margin-top: 20px !important;
 }
 
 .container
@@ -32,6 +33,7 @@ body
     color: $text-color;
     border: solid 1px $border-color;
     text-align: center;
+        min-height: 500px !important;
 }
 
 .btn-default
