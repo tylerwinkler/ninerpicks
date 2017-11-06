@@ -12,9 +12,13 @@ class PollsController < ApplicationController
     end
     
     def create
-        @poll = Poll.new
+        @poll = Poll.new(poll_params)
         
-        @poll.save
+        if @poll.save
+            redirect_to @poll
+        else
+            render 'new'
+        end
     end
     
     def destroy
@@ -22,4 +26,9 @@ class PollsController < ApplicationController
         
         @poll.destroy
     end
+end
+
+private 
+def poll_params
+    params.require(:poll).permit(:title, :question, :author)
 end

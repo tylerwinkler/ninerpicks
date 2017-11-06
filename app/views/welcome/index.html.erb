@@ -43,9 +43,9 @@
                     <% @featured_polls.each do |poll| %>
                         <tr>
                             <td>*</td>
-                            <td>Poll Title</td>
-                            <td>Owner/Author Name</td>
-                            <td>Creation Date</td>
+                            <td><%= poll.title %></td>
+                            <td><%= poll.author %></td>
+                            <td><%= poll.created_at %></td>
                             <td>Total Votes</td>
                             <td>
                                 <%= link_to 'Take Poll', poll_path(poll.id), :class => "btn btn-primary", :type => "btn" %>

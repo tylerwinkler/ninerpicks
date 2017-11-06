@@ -6305,3 +6305,1029 @@ Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
 ActiveRecord::RecordNotFound (Couldn't find Poll with 'id'=):
   
 app/controllers/polls_controller.rb:15:in `create'
+Started GET "/polls/new" for 152.15.113.11 at 2017-11-06 21:33:51 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 293ms (Views: 279.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:34:05 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T+eA+W1sxZoH+MRfApQ5+sGI660kITcAiYU1CxG088zkiLRvoGhkfQqI235RQ0nJR/zEMgYtVXLUTaixfQ9HnQ==", "poll"=>{"title"=>"A question"}, "commit"=>"Create Poll"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-06 21:34:05.023333"], ["updated_at", "2017-11-06 21:34:05.023333"]]
+  [1m[35m (19.4ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#create, rendering head :no_content
+Completed 204 No Content in 41ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:34:06 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 26ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:34:07 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:34:09 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/polls/new" for 152.15.113.11 at 2017-11-06 21:34:10 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:34:12 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ex+4ilNDt78zGrO5AorJOnjl/5b9qBGeU29joAu4ZnW4cIwcnkcWWD5qrJhRXbkJ/pHQCd+kc+wOp/4aZwPSJA==", "poll"=>{"title"=>""}, "commit"=>"Create Poll"}
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-06 21:34:12.484671"], ["updated_at", "2017-11-06 21:34:12.484671"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#create, rendering head :no_content
+Completed 204 No Content in 35ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/polls/new" for 152.15.113.11 at 2017-11-06 21:34:14 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/polls/new" for 152.15.113.11 at 2017-11-06 21:34:14 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:34:21 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:35:50 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.1ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 37ms (Views: 28.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/polls/new" for 152.15.113.11 at 2017-11-06 21:35:51 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:35:54 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QVSt9se49zqM3j9QdT64VU2d0klC+T3g9+KiE0JSb/gS4uz8ghQHTqARI3P04VJVcISrMltHxIVht8ZgX6D7Zg==", "poll"=>{"title"=>"First poll"}, "commit"=>"Create Poll"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant PollsController::Article):
+  
+app/controllers/polls_controller.rb:15:in `create'
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:36:37 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QVSt9se49zqM3j9QdT64VU2d0klC+T3g9+KiE0JSb/gS4uz8ghQHTqARI3P04VJVcISrMltHxIVht8ZgX6D7Zg==", "poll"=>{"title"=>"First poll"}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:36:37.119678"], ["updated_at", "2017-11-06 21:36:37.119678"], ["title", "First poll"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/11
+Completed 302 Found in 88ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/polls/11" for 152.15.113.11 at 2017-11-06 21:36:37 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 18.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:36:41 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/polls/8" for 152.15.113.11 at 2017-11-06 21:36:44 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/polls/11" for 152.15.113.11 at 2017-11-06 21:36:46 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/polls/10" for 152.15.113.11 at 2017-11-06 21:36:49 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPoll Load (0.1ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/polls/9" for 152.15.113.11 at 2017-11-06 21:36:51 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/polls/11" for 152.15.113.11 at 2017-11-06 21:36:58 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/polls/11" for 152.15.113.11 at 2017-11-06 21:37:00 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:37:28 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/polls/8" for 152.15.113.11 at 2017-11-06 21:37:45 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zwBy59Z0mPwNcMhx5PUTehbNbNjQy/3bXNDpceNBl/lkb0ZxG3A5GwAA11C3ImNJkLlDR/LHn6kBGHTLj/ojqA==", "id"=>"8"}
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 8]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 32ms (ActiveRecord: 8.7ms)
+
+
+Started DELETE "/polls/10" for 152.15.113.11 at 2017-11-06 21:37:45 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zwBy59Z0mPwNcMhx5PUTehbNbNjQy/3bXNDpceNBl/lkb0ZxG3A5GwAA11C3ImNJkLlDR/LHn6kBGHTLj/ojqA==", "id"=>"10"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 10]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 29ms (ActiveRecord: 7.8ms)
+
+
+Started DELETE "/polls/11" for 152.15.113.11 at 2017-11-06 21:37:46 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zwBy59Z0mPwNcMhx5PUTehbNbNjQy/3bXNDpceNBl/lkb0ZxG3A5GwAA11C3ImNJkLlDR/LHn6kBGHTLj/ojqA==", "id"=>"11"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 11]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 27ms (ActiveRecord: 6.4ms)
+
+
+Started DELETE "/polls/9" for 152.15.113.11 at 2017-11-06 21:37:47 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zwBy59Z0mPwNcMhx5PUTehbNbNjQy/3bXNDpceNBl/lkb0ZxG3A5GwAA11C3ImNJkLlDR/LHn6kBGHTLj/ojqA==", "id"=>"9"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 9]]
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 33ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:37:47 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/polls/new" for 152.15.113.11 at 2017-11-06 21:37:51 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:37:53 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iOfCBS6RQyLtRaCzPF3enHrbtwU4K/guyLdhSxhKV33bUYMPaz2zVsGKvJC9gjScR8LOfiGVAUte4gU4BbjD4w==", "poll"=>{"title"=>""}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:37:53.033524"], ["updated_at", "2017-11-06 21:37:53.033524"], ["title", ""]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/12
+Completed 302 Found in 12ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/polls/12" for 152.15.113.11 at 2017-11-06 21:37:53 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:37:56 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I0JIDdjn7Hqpvrj9c9Do30hg8PG+kT+CHMO9jGpoH+eILXybFeNNnaTOp9wgB5jszhTfbpydXfBBCyA2BtOrtg==", "poll"=>{"title"=>""}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:37:56.394820"], ["updated_at", "2017-11-06 21:37:56.394820"], ["title", ""]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/13
+Completed 302 Found in 10ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/polls/13" for 152.15.113.11 at 2017-11-06 21:37:56 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:37:58 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I0JIDdjn7Hqpvrj9c9Do30hg8PG+kT+CHMO9jGpoH+eILXybFeNNnaTOp9wgB5jszhTfbpydXfBBCyA2BtOrtg==", "poll"=>{"title"=>""}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:37:58.506793"], ["updated_at", "2017-11-06 21:37:58.506793"], ["title", ""]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/14
+Completed 302 Found in 10ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/polls/14" for 152.15.113.11 at 2017-11-06 21:37:58 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:38:01 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I0JIDdjn7Hqpvrj9c9Do30hg8PG+kT+CHMO9jGpoH+eILXybFeNNnaTOp9wgB5jszhTfbpydXfBBCyA2BtOrtg==", "poll"=>{"title"=>""}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:38:01.021977"], ["updated_at", "2017-11-06 21:38:01.021977"], ["title", ""]]
+  [1m[35m (92.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/15
+Completed 302 Found in 98ms (ActiveRecord: 93.1ms)
+
+
+Started GET "/polls/15" for 152.15.113.11 at 2017-11-06 21:38:01 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:38:03 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I0JIDdjn7Hqpvrj9c9Do30hg8PG+kT+CHMO9jGpoH+eILXybFeNNnaTOp9wgB5jszhTfbpydXfBBCyA2BtOrtg==", "poll"=>{"title"=>""}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:38:03.660314"], ["updated_at", "2017-11-06 21:38:03.660314"], ["title", ""]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/16
+Completed 302 Found in 10ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/polls/16" for 152.15.113.11 at 2017-11-06 21:38:03 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:38:05 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I0JIDdjn7Hqpvrj9c9Do30hg8PG+kT+CHMO9jGpoH+eILXybFeNNnaTOp9wgB5jszhTfbpydXfBBCyA2BtOrtg==", "poll"=>{"title"=>""}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:38:05.893773"], ["updated_at", "2017-11-06 21:38:05.893773"], ["title", ""]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/17
+Completed 302 Found in 13ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/polls/17" for 152.15.113.11 at 2017-11-06 21:38:05 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:38:08 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/polls/new" for 152.15.113.11 at 2017-11-06 21:38:15 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:38:23 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"waNULMSwEur4x+dNL0znZCM/wXaojkuJca5ytolI0ZySFRUmgRzintQI+26ukw1kHia4DbEwsuzn+xbFlLpFAg==", "poll"=>{"title"=>"1"}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:38:23.718962"], ["updated_at", "2017-11-06 21:38:23.718962"], ["title", "1"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/18
+Completed 302 Found in 11ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/polls/18" for 152.15.113.11 at 2017-11-06 21:38:23 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 118ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:38:27 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ajBTYODPC0jy/DkupabXqjA8TAnEpvt60jVlfmlPo5LBX2f2Lcuqr/+MJg/2caeZtkhjluaqmQiP/fjEBfQXww==", "poll"=>{"title"=>"1"}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:38:27.927757"], ["updated_at", "2017-11-06 21:38:27.927757"], ["title", "1"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/19
+Completed 302 Found in 11ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/polls/19" for 152.15.113.11 at 2017-11-06 21:38:28 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mPoll Load (0.1ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:38:32 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ajBTYODPC0jy/DkupabXqjA8TAnEpvt60jVlfmlPo5LBX2f2Lcuqr/+MJg/2caeZtkhjluaqmQiP/fjEBfQXww==", "poll"=>{"title"=>"2"}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:38:32.120039"], ["updated_at", "2017-11-06 21:38:32.120039"], ["title", "2"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/20
+Completed 302 Found in 11ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/polls/20" for 152.15.113.11 at 2017-11-06 21:38:32 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:38:35 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ajBTYODPC0jy/DkupabXqjA8TAnEpvt60jVlfmlPo5LBX2f2Lcuqr/+MJg/2caeZtkhjluaqmQiP/fjEBfQXww==", "poll"=>{"title"=>"3"}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:38:35.898195"], ["updated_at", "2017-11-06 21:38:35.898195"], ["title", "3"]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/21
+Completed 302 Found in 12ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/polls/21" for 152.15.113.11 at 2017-11-06 21:38:36 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:38:39 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ajBTYODPC0jy/DkupabXqjA8TAnEpvt60jVlfmlPo5LBX2f2Lcuqr/+MJg/2caeZtkhjluaqmQiP/fjEBfQXww==", "poll"=>{"title"=>"4"}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:38:39.386407"], ["updated_at", "2017-11-06 21:38:39.386407"], ["title", "4"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/22
+Completed 302 Found in 11ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/polls/22" for 152.15.113.11 at 2017-11-06 21:38:39 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:38:43 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ajBTYODPC0jy/DkupabXqjA8TAnEpvt60jVlfmlPo5LBX2f2Lcuqr/+MJg/2caeZtkhjluaqmQiP/fjEBfQXww==", "poll"=>{"title"=>"5"}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-06 21:38:43.674921"], ["updated_at", "2017-11-06 21:38:43.674921"], ["title", "5"]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/23
+Completed 302 Found in 11ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/polls/23" for 152.15.113.11 at 2017-11-06 21:38:43 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:38:46 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:39:21 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 30ms (Views: 20.9ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAuthorToPolls (20171106214046)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "polls" ADD "author" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171106214046"]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:43:14 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `timestamp' for #<Poll:0x000000049610f0>):
+    45:                             <td>*</td>
+    46:                             <td><%= poll.title %></td>
+    47:                             <td><%= poll.author %></td>
+    48:                             <td><%= poll.timestamp %></td>
+    49:                             <td>Total Votes</td>
+    50:                             <td>
+    51:                                 <%= link_to 'Take Poll', poll_path(poll.id), :class => "btn btn-primary", :type => "btn" %>
+  
+app/views/welcome/index.html.erb:48:in `block in _app_views_welcome_index_html_erb___4511065094544684170_38427000'
+app/views/welcome/index.html.erb:43:in `each'
+app/views/welcome/index.html.erb:43:in `_app_views_welcome_index_html_erb___4511065094544684170_38427000'
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:43:41 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.1ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `t' for #<Poll:0x00000005083428>):
+    45:                             <td>*</td>
+    46:                             <td><%= poll.title %></td>
+    47:                             <td><%= poll.author %></td>
+    48:                             <td><%= poll.t %></td>
+    49:                             <td>Total Votes</td>
+    50:                             <td>
+    51:                                 <%= link_to 'Take Poll', poll_path(poll.id), :class => "btn btn-primary", :type => "btn" %>
+  
+app/views/welcome/index.html.erb:48:in `block in _app_views_welcome_index_html_erb___4511065094544684170_42205920'
+app/views/welcome/index.html.erb:43:in `each'
+app/views/welcome/index.html.erb:43:in `_app_views_welcome_index_html_erb___4511065094544684170_42205920'
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:43:59 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 193ms (Views: 190.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/polls/new" for 152.15.113.11 at 2017-11-06 21:44:02 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (22.0ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `question' for #<Poll:0x007fa268040b20>):
+    25:     </p>
+    26:     <p>
+    27:         <%= p.label :question %>
+    28:         <%= p.text_field :question %>
+    29:     </p>
+    30:     <p>
+    31:         <%= p.submit %>
+  
+app/views/polls/new.html.erb:28:in `block in _app_views_polls_new_html_erb___583969617970456398_70167753276120'
+app/views/polls/new.html.erb:16:in `_app_views_polls_new_html_erb___583969617970456398_70167753276120'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddQuestionToPolls (20171106214430)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "polls" ADD "polls" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "polls" ADD "question" text[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171106214430"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/polls/new" for 152.15.113.11 at 2017-11-06 21:44:59 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 257ms (Views: 241.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:45:27 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gAkmWADA0PXHmPWwQJB79Rt3xgwuYt12g5TNcNI+uEgrZhLOzcRxEsro6pETRwvGnQPpkwxuvwTeXFDKvoUMGQ==", "poll"=>{"author"=>"Tyler", "title"=>"First poll", "question"=>"This is fun?"}, "commit"=>"Create Poll"}
+Unpermitted parameter: :author
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title", "question") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-11-06 21:45:27.828968"], ["updated_at", "2017-11-06 21:45:27.828968"], ["title", "First poll"], ["question", "This is fun?"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/24
+Completed 302 Found in 88ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/polls/24" for 152.15.113.11 at 2017-11-06 21:45:28 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/polls/24" for 152.15.113.11 at 2017-11-06 21:46:14 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/polls/24" for 152.15.113.11 at 2017-11-06 21:46:44 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:46:54 +0000
+Started GET "/polls/new" for 152.15.113.11 at 2017-11-06 21:46:54 +0000
+  Parameters: {"id"=>"24"}
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 58ms (Views: 38.7ms | ActiveRecord: 1.0ms)
+
+
+Processing by PollsController#create as HTML
+Processing by PollsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gAkmWADA0PXHmPWwQJB79Rt3xgwuYt12g5TNcNI+uEgrZhLOzcRxEsro6pETRwvGnQPpkwxuvwTeXFDKvoUMGQ==", "poll"=>{"author"=>"Tyler", "title"=>"First poll", "question"=>"This is fun?"}, "commit"=>"Create Poll"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title", "author", "question") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2017-11-06 21:46:54.643057"], ["updated_at", "2017-11-06 21:46:54.643057"], ["title", "First poll"], ["author", "Tyler"], ["question", "This is fun?"]]
+  Rendering polls/new.html.erb within layouts/application
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  Rendered polls/new.html.erb within layouts/application (4.5ms)
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/25
+Completed 302 Found in 35ms (ActiveRecord: 8.0ms)
+
+
+Completed 200 OK in 56ms (Views: 39.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:46:58 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/polls/25" for 152.15.113.11 at 2017-11-06 21:47:02 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:47:43 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:47:49 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:47:51 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/polls/15" for 152.15.113.11 at 2017-11-06 21:49:11 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WmnKttrvNAQmURQNvYQeYBZ7qHajpICuzGCvJQim2KvxBv4gF+uV4yshCyzuU25TkA+H6YGo4tyRqDKfZB1s+g==", "id"=>"15"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 15]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 64ms (ActiveRecord: 6.8ms)
+
+
+Started DELETE "/polls/13" for 152.15.113.11 at 2017-11-06 21:49:12 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WmnKttrvNAQmURQNvYQeYBZ7qHajpICuzGCvJQim2KvxBv4gF+uV4yshCyzuU25TkA+H6YGo4tyRqDKfZB1s+g==", "id"=>"13"}
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 13]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 205ms (ActiveRecord: 8.0ms)
+
+
+Started DELETE "/polls/21" for 152.15.113.11 at 2017-11-06 21:49:12 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WmnKttrvNAQmURQNvYQeYBZ7qHajpICuzGCvJQim2KvxBv4gF+uV4yshCyzuU25TkA+H6YGo4tyRqDKfZB1s+g==", "id"=>"21"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 21]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 31ms (ActiveRecord: 8.5ms)
+
+
+Started DELETE "/polls/20" for 152.15.113.11 at 2017-11-06 21:49:13 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WmnKttrvNAQmURQNvYQeYBZ7qHajpICuzGCvJQim2KvxBv4gF+uV4yshCyzuU25TkA+H6YGo4tyRqDKfZB1s+g==", "id"=>"20"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 20]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 29ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:49:15 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/polls/19" for 152.15.113.11 at 2017-11-06 21:49:18 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ts9GCQaX/EY9fGzLXVzKCSzNAOkq8ycCh301h19PAgbloHKfy5NdoTAMc+oOi7o6qrkvdgj/RXDatag9M/S2Vw==", "id"=>"19"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 19]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 32ms (ActiveRecord: 9.0ms)
+
+
+Started DELETE "/polls/17" for 152.15.113.11 at 2017-11-06 21:49:18 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ts9GCQaX/EY9fGzLXVzKCSzNAOkq8ycCh301h19PAgbloHKfy5NdoTAMc+oOi7o6qrkvdgj/RXDatag9M/S2Vw==", "id"=>"17"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 17]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 31ms (ActiveRecord: 8.6ms)
+
+
+Started DELETE "/polls/25" for 152.15.113.11 at 2017-11-06 21:49:19 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ts9GCQaX/EY9fGzLXVzKCSzNAOkq8ycCh301h19PAgbloHKfy5NdoTAMc+oOi7o6qrkvdgj/RXDatag9M/S2Vw==", "id"=>"25"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 25]]
+  [1m[35m (9.1ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 32ms (ActiveRecord: 9.6ms)
+
+
+Started DELETE "/polls/14" for 152.15.113.11 at 2017-11-06 21:49:19 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ts9GCQaX/EY9fGzLXVzKCSzNAOkq8ycCh301h19PAgbloHKfy5NdoTAMc+oOi7o6qrkvdgj/RXDatag9M/S2Vw==", "id"=>"14"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 14]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 31ms (ActiveRecord: 9.0ms)
+
+
+Started DELETE "/polls/16" for 152.15.113.11 at 2017-11-06 21:49:20 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ts9GCQaX/EY9fGzLXVzKCSzNAOkq8ycCh301h19PAgbloHKfy5NdoTAMc+oOi7o6qrkvdgj/RXDatag9M/S2Vw==", "id"=>"16"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 16]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 30ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:49:21 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/polls/23" for 152.15.113.11 at 2017-11-06 21:49:22 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+/1E6kJyH2uT7I9UZObJM5y/unwRKPVvEGiw/+PsrTBQknB8j3a+jJ6ckHU3MbkAGsuV4zMklx1NoC1Fj1cZYQ==", "id"=>"23"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 23]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 30ms (ActiveRecord: 8.7ms)
+
+
+Started DELETE "/polls/18" for 152.15.113.11 at 2017-11-06 21:49:23 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+/1E6kJyH2uT7I9UZObJM5y/unwRKPVvEGiw/+PsrTBQknB8j3a+jJ6ckHU3MbkAGsuV4zMklx1NoC1Fj1cZYQ==", "id"=>"18"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 18]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 30ms (ActiveRecord: 8.3ms)
+
+
+Started DELETE "/polls/12" for 152.15.113.11 at 2017-11-06 21:49:24 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+/1E6kJyH2uT7I9UZObJM5y/unwRKPVvEGiw/+PsrTBQknB8j3a+jJ6ckHU3MbkAGsuV4zMklx1NoC1Fj1cZYQ==", "id"=>"12"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 12]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 30ms (ActiveRecord: 8.5ms)
+
+
+Started DELETE "/polls/22" for 152.15.113.11 at 2017-11-06 21:49:25 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+/1E6kJyH2uT7I9UZObJM5y/unwRKPVvEGiw/+PsrTBQknB8j3a+jJ6ckHU3MbkAGsuV4zMklx1NoC1Fj1cZYQ==", "id"=>"22"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 22]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 29ms (ActiveRecord: 7.2ms)
+
+
+Started DELETE "/polls/24" for 152.15.113.11 at 2017-11-06 21:49:25 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+/1E6kJyH2uT7I9UZObJM5y/unwRKPVvEGiw/+PsrTBQknB8j3a+jJ6ckHU3MbkAGsuV4zMklx1NoC1Fj1cZYQ==", "id"=>"24"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "polls" WHERE "polls"."id" = ?[0m  [["id", 24]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+No template found for PollsController#destroy, rendering head :no_content
+Completed 204 No Content in 29ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-06 21:49:26 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/polls/new" for 152.15.113.11 at 2017-11-06 21:49:33 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered polls/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/polls" for 152.15.113.11 at 2017-11-06 21:49:41 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"21JdjN98XzpC/g00OcZm+V33ufbcisBPdm/53GgUf06I5ByGmtCvTm4xERe4GYz5YO7AjcU0OSrgOp2vdebr0A==", "poll"=>{"author"=>"Tyler", "title"=>"First poll", "question"=>"This is fun?"}, "commit"=>"Create Poll"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "polls" ("created_at", "updated_at", "title", "author", "question") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2017-11-06 21:49:41.355258"], ["updated_at", "2017-11-06 21:49:41.355258"], ["title", "First poll"], ["author", "Tyler"], ["question", "This is fun?"]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-tylerwinkler.c9users.io/polls/26
+Completed 302 Found in 12ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/polls/26" for 152.15.113.11 at 2017-11-06 21:49:41 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering polls/show.html.erb within layouts/application
+  Rendered polls/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 112ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+

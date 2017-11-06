@@ -16,25 +16,20 @@
 <%= form_for @poll do |p| %>
 <div id="form">
     <p>
+        <%= p.label :author %>
+        <%= p.text_field :author %>
+    </p>
+    <p>
         <%= p.label :title %>
         <%= p.text_field :title %>
     </p>
-        <p>
-        Question
-        <%= p.text_field :title %>
-
+    <p>
+        <%= p.label :question %>
+        <%= p.text_field :question %>
     </p>
-        <p>
-        Question
-        <%= p.text_field :title %>
+    <p>
+        <%= p.submit %>
     </p>
-        <p>
-        Question
-        <%= p.text_field :title %>
-        
-    </p>
-    
-    <%= p.submit %>
 </div>
 <% end %>
 
