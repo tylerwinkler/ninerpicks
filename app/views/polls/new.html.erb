@@ -1,7 +1,44 @@
 <h1>Niner Picks</h1>
 <h2>Create Poll</h2>
 
+<script>
+    function add()
+    {
+        var div = document.getElementById("form");
+        
+        var newQuestionTitle = document.createElement("span");
+        newQuestionTitle.innerHTML("<p>Label</p>");
+        
+        div.appendChild(newQuestionTitle);
+    }
+</script>
+
 <%= form_for @poll do |p| %>
-<%= p.label :title %>
-<%= p.text_field :answer %>
+<div id="form">
+    <p>
+        <%= p.label :title %>
+        <%= p.text_field :title %>
+    </p>
+        <p>
+        Question
+        <%= p.text_field :title %>
+
+    </p>
+        <p>
+        Question
+        <%= p.text_field :title %>
+    </p>
+        <p>
+        Question
+        <%= p.text_field :title %>
+        
+    </p>
+    
+    <%= p.submit %>
+</div>
 <% end %>
+
+<button onclick="add()">
+    Add Question
+</button>
+
