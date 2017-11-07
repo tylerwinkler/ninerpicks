@@ -1,20 +1,12 @@
+<head>
+    <%= render partial: 'javascript' %>
+</head>
+
 <h1>Niner Picks</h1>
 <h2>Create Poll</h2>
 
-<script>
-    function add()
-    {
-        var div = document.getElementById("form");
-        
-        var newQuestionTitle = document.createElement("span");
-        newQuestionTitle.innerHTML("<p>Label</p>");
-        
-        div.appendChild(newQuestionTitle);
-    }
-</script>
-
-<%= form_for @poll do |p| %>
 <div id="form">
+<%= form_for @poll do |p| %>
     <p>
         <%= p.label :author %>
         <%= p.text_field :author %>
@@ -27,13 +19,26 @@
         <%= p.label :question %>
         <%= p.text_field :question %>
     </p>
+    
     <p>
-        <%= p.submit %>
+        <%= p.submit :id => "submit" %>
     </p>
-</div>
 <% end %>
+</div>
 
-<button onclick="add()">
-    Add Question
-</button>
+<button onClick="add()">Add Question</button>
+
+<script>
+function add()
+{
+    var div = document.getElementById("form");
+    
+    var newQuestionTitle = document.createElement("div");
+    newQuestionTitle.textContent = "New Content";
+    
+    var element = document.getElementById("submit");
+    
+    element.parentNode.insertBefore(newQuestionTitle, element);
+}
+</script>
 
