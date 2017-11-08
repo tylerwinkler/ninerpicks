@@ -1,25 +1,22 @@
-<head>
-    <%= render partial: 'javascript' %>
-</head>
-
 <h1>Niner Picks</h1>
 <h2>Create Poll</h2>
 
 <div id="form">
 <%= form_for @poll do |p| %>
-    <p>
-        <%= p.label :author %>
-        <%= p.text_field :author %>
-    </p>
-    <p>
-        <%= p.label :title %>
-        <%= p.text_field :title %>
-    </p>
-    <p>
-        <%= p.label :question %>
-        <%= p.text_field :question %>
-    </p>
-    
+<table>
+    <tr>
+        <td><%= p.label :author %></td>
+        <td><%= p.text_field :author %></td>
+    </tr>
+    <tr>
+        <td><%= p.label :title %></td>
+        <td><%= p.text_field :title %></td>
+    </tr>
+    <tr>
+        <td><%= p.label :question %></td>
+        <td><%= p.text_field :question %></td>
+    </tr>
+</table>
     
 <!--<a id="addQuestion" onClick="add()">Add Question</a>-->
     

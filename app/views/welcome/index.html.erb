@@ -49,7 +49,6 @@
                             <td><%= poll.totalvotes %></td>
                             <td>
                                 <%= link_to 'Take Poll', poll_path(poll.id), :class => "btn btn-lg btn-default", :type => "btn" %>
-                                <%= link_to 'Delete Poll', {:controller=> "polls", :action => "destroy", :id=>poll.id}, :method => 'delete', :class => "btn btn-lg btn-default", :type => "btn" %>
                             </td>
                         </tr>
                     <% end %>
