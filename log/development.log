@@ -8845,3 +8845,254 @@ Processing by PollsController#index as HTML
 Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:27:46 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.4ms)
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered polls/index.html.erb within layouts/application (296.1ms)
+Completed 500 Internal Server Error in 316ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `welcome' for #<#<Class:0x000000039dc468>:0x000000039b3b58>):
+    10:     <div class="container">
+    11:         <div class="row">
+    12:             <div class="col">
+    13:                 <%= link_to 'Go Home', controller: welcome %>
+    14:             </div>
+    15:             <div class="col">
+    16:                 <h1>Niner Picks</h1>
+  
+app/views/polls/index.html.erb:13:in `_app_views_polls_index_html_erb___928588052909810374_30337560'
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:28:09 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered polls/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/*ninerpicks/app/views/polls/index.html.erb:13: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...link_to 'Go Home', controller :welcome );@output_buffer.safe...
+...                               ^):
+  
+app/views/polls/index.html.erb:13: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:29:06 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.4ms)
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendered polls/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 260ms (Views: 258.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:29:31 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendered polls/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:29:51 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendered polls/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:30:06 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered polls/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/*ninerpicks/app/views/polls/index.html.erb:13: syntax error, unexpected ')', expecting =>
+...btn-default", :type => "btn"} );@output_buffer.safe_append='
+...                               ^
+/home/ubuntu/workspace/*ninerpicks/app/views/polls/index.html.erb:68: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/*ninerpicks/app/views/polls/index.html.erb:70: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/polls/index.html.erb:13: syntax error, unexpected ')', expecting =>
+app/views/polls/index.html.erb:68: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/polls/index.html.erb:70: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:30:41 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.4ms)
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Poll Load (0.0ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Poll Load (0.0ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Poll Load (0.0ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Poll Load (0.0ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Poll Load (0.0ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Poll Load (0.0ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Poll Load (0.0ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered polls/index.html.erb within layouts/application (297.4ms)
+Completed 500 Internal Server Error in 301ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `welcome_index' for #<#<Class:0x000000039dc468>:0x00000004294420>
+Did you mean?  welcome_index_url):
+    10:     <div class="container">
+    11:         <div class="row">
+    12:             <div class="col">
+    13:                 <%= link_to 'Go Home', welcome_index, :class => "btn btn-lg btn-default", :type => "btn" %>
+    14:             </div>
+    15:             <div class="col">
+    16:                 <h1>Niner Picks</h1>
+  
+app/views/polls/index.html.erb:13:in `_app_views_polls_index_html_erb___928588052909810374_34950580'
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:31:35 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendered polls/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?class=btn+btn-lg+btn-default&type=btn" for 173.239.208.15 at 2017-11-08 18:31:38 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"class"=>"btn btn-lg btn-default", "type"=>"btn"}
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:31:43 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendered polls/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:31:45 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.6ms)
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendered polls/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:32:01 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendered polls/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 173.239.208.15 at 2017-11-08 18:32:15 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:32:17 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.4ms)
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendered polls/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 173.239.208.15 at 2017-11-08 18:32:38 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/polls/new" for 173.239.208.15 at 2017-11-08 18:32:40 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered application/_javascript.html.erb (0.4ms)
+  Rendered polls/new.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:32:41 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.3ms)
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendered polls/index.html.erb within layouts/application (95.2ms)
+Completed 200 OK in 122ms (Views: 116.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/polls/new" for 173.239.208.15 at 2017-11-08 18:32:42 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#new as HTML
+  Rendering polls/new.html.erb within layouts/application
+  Rendered application/_javascript.html.erb (1.2ms)
+  Rendered polls/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/polls/1" for 173.239.208.15 at 2017-11-08 18:32:44 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Poll with 'id'=1):
+  
+app/controllers/polls_controller.rb:7:in `show'
+Started GET "/polls" for 173.239.208.15 at 2017-11-08 18:32:46 +0000
+Cannot render console from 173.239.208.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PollsController#index as HTML
+  Rendering polls/index.html.erb within layouts/application
+  Rendered application/_bootstrap.html.erb (0.4ms)
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT "polls".* FROM "polls"[0m
+  Rendered polls/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 63ms (Views: 61.0ms | ActiveRecord: 0.4ms)
+
+
