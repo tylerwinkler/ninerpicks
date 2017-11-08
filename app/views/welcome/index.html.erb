@@ -38,7 +38,7 @@
                         <th>Poll Author</th>
                         <th>Date Created</th>
                         <th>Total Votes</th>
-                        
+                        <th></th>
                     </tr>
                     <% @featured_polls.each do |poll| %>
                         <tr>
@@ -46,10 +46,10 @@
                             <td><%= poll.title %></td>
                             <td><%= poll.author %></td>
                             <td><%= poll.created_at %></td>
-                            <td>Total Votes</td>
+                            <td><%= poll.totalvotes %></td>
                             <td>
-                                <%= link_to 'Take Poll', poll_path(poll.id), :class => "btn btn-primary", :type => "btn" %>
-                                <%= link_to 'Delete Poll', {:controller=> "polls", :action => "destroy", :id=>poll.id}, :method => 'delete', :class => "btn btn-primary", :type => "btn" %>
+                                <%= link_to 'Take Poll', poll_path(poll.id), :class => "btn btn-lg btn-default", :type => "btn" %>
+                                <%= link_to 'Delete Poll', {:controller=> "polls", :action => "destroy", :id=>poll.id}, :method => 'delete', :class => "btn btn-lg btn-default", :type => "btn" %>
                             </td>
                         </tr>
                     <% end %>

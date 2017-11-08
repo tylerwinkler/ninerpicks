@@ -20,25 +20,34 @@
         <%= p.text_field :question %>
     </p>
     
+    
+<!--<a id="addQuestion" onClick="add()">Add Question</a>-->
+    
     <p>
-        <%= p.submit :id => "submit" %>
+        <%= p.submit %>
     </p>
 <% end %>
 </div>
-
-<button onClick="add()">Add Question</button>
 
 <script>
 function add()
 {
     var div = document.getElementById("form");
     
-    var newQuestionTitle = document.createElement("div");
-    newQuestionTitle.textContent = "New Content";
+    var newParagraph = document.createElement("p");
     
-    var element = document.getElementById("submit");
+    var newLabel = document.createElement("label");
+    newLabel.textContent = "Question ";
     
-    element.parentNode.insertBefore(newQuestionTitle, element);
+    var newField = document.createElement("input");
+    newField.setAttribute("type", "text");
+    
+    newParagraph.appendChild(newLabel);
+    newParagraph.appendChild(newField);
+    
+    var element = document.getElementById("addQuestion");
+    
+    element.parentNode.insertBefore(newParagraph, element);
 }
 </script>
 

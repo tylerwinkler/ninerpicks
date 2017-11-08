@@ -14,6 +14,8 @@ class PollsController < ApplicationController
     def create
         @poll = Poll.new(poll_params)
         
+        @poll.totalvotes = 0;
+        
         if @poll.save
             redirect_to @poll
         else
