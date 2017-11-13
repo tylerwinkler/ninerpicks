@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171108020249) do
+ActiveRecord::Schema.define(version: 20171113210040) do
 
   create_table "polls", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -18,7 +18,9 @@ ActiveRecord::Schema.define(version: 20171108020249) do
     t.string "title"
     t.string "author"
     t.text "question"
-    t.integer "totalvotes"
+    t.integer "yes_votes"
+    t.integer "no_votes"
+    t.integer "total_votes"
   end
 
 end
