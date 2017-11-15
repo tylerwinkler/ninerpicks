@@ -3,7 +3,17 @@ class ResponsesController < ApplicationController
         @poll = Poll.find(params[:poll_id])
         @response = @poll.responses.create(response_params)
         
-        redirect_to polls_path
+        redirect_to @poll
+    end
+    
+        
+    def index
+        @poll = Poll.find(params[:poll_id])
+        @responses = @poll.responses
+    end
+    
+    def show
+        @response = Response.find(params[:id])
     end
     
     private
