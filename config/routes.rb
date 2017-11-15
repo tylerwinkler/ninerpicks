@@ -2,6 +2,11 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get 'welcome/index'
   
-  resources :polls
+  resources :polls do
+    collection do
+      get 'take'
+    end
+    resources :responses
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

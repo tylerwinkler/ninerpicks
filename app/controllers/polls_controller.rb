@@ -1,6 +1,6 @@
 class PollsController < ApplicationController
     def index
-        @polls = Poll.all
+        @polls = Poll.all.reverse
     end
         
     def show
@@ -14,14 +14,29 @@ class PollsController < ApplicationController
     def create
         @poll = Poll.new(poll_params)
         
-        @poll.total_votes = 0;
-        @poll.yes_votes = 0;
-        @poll.no_votes = 0;
-        
         if @poll.save
-            redirect_to @poll
+            redirect_to polls_path
         else
             render 'new'
+        end
+    end
+    
+    def edit
+        @poll = Poll.find(params[:id])
+    end
+    
+    def take
+        @poll = Poll.find(params[:id])
+    end
+        
+    
+    def update
+        @poll = Poll.find(params[:id])
+        
+        if @poll.update(article_params)
+            redirect_to @poll
+        else
+            render 'edit'
         end
     end
     
@@ -29,6 +44,8 @@ class PollsController < ApplicationController
         @poll = Poll.find(params[:id])
         
         @poll.destroy
+        
+        redirect_to polls_path
     end
 end
 

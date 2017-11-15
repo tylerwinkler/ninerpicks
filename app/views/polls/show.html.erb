@@ -2,8 +2,5 @@
 <h2><%= @poll.title %> by <%= @poll.author %></h2>
 <h3><%= @poll.question %></h3>
 
-<form>
-    <input type="radio" name="answer" value="True">True<br>
-    <input type="radio" name="answer" value="False">False<br>
-    <input type="submit" value="Submit">
-</form>
+<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+<%= column_chart @poll.responses.group(:answer).count %>
