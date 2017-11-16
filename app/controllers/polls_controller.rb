@@ -1,6 +1,7 @@
 class PollsController < ApplicationController
     def index
         @polls = Poll.all.reverse
+        @user = current_user
     end
         
     def show
@@ -8,6 +9,13 @@ class PollsController < ApplicationController
     end
     
     def new
+        if !user_signed_in?
+            redirect_to '/users/sign_in', notice: 'You must be logged in to create a poll'
+            return
+        end
+        
+        @user = current_user
+        
         @poll = Poll.new
     end
     
@@ -41,6 +49,9 @@ class PollsController < ApplicationController
     end
     
     def destroy
+        if !user_signed_in?
+            return
+        end
         @poll = Poll.find(params[:id])
         
         @poll.destroy
