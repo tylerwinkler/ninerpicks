@@ -1,0 +1,63 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 24, /home/ubuntu/workspace/*ninerpicks/app/assets/stylesheets/application.css.scss */
+body {
+  background-color: #243;
+  color: #ccac00;
+}
+
+/* line 30, /home/ubuntu/workspace/*ninerpicks/app/assets/stylesheets/application.css.scss */
+.container {
+  background-color: #2b5540;
+  color: #ccac00;
+  border: solid 1px #ccac00;
+  text-align: center;
+}
+
+/* line 38, /home/ubuntu/workspace/*ninerpicks/app/assets/stylesheets/application.css.scss */
+.btn-default {
+  background-color: #243;
+  border-color: #ccac00;
+  color: #ccac00;
+}
+
+/* line 45, /home/ubuntu/workspace/*ninerpicks/app/assets/stylesheets/application.css.scss */
+.btn-default:hover {
+  background-color: #33664d;
+  border-color: gold;
+  color: gold;
+}
+
+/* line 56, /home/ubuntu/workspace/*ninerpicks/app/assets/stylesheets/application.css.scss */
+table, td, th {
+  border-collapse: collapse;
+  border: solid 1px #ccac00;
+}
+
+/* line 62, /home/ubuntu/workspace/*ninerpicks/app/assets/stylesheets/application.css.scss */
+th {
+  padding: 20px;
+}
+
+/* line 67, /home/ubuntu/workspace/*ninerpicks/app/assets/stylesheets/application.css.scss */
+td {
+  padding: 10px;
+}
+
+/* line 72, /home/ubuntu/workspace/*ninerpicks/app/assets/stylesheets/application.css.scss */
+tr:hover {
+  cursor: pointer;
+}

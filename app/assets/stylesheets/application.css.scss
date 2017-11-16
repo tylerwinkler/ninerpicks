@@ -22,9 +22,8 @@ $border-color: $text-color;
 
 body
 {
-    background-color: $bg-color !important;
+    background-color: $bg-color;
     color: $text-color;
-    margin-top: 20px !important;
 }
 
 .container
@@ -33,7 +32,6 @@ body
     color: $text-color;
     border: solid 1px $border-color;
     text-align: center;
-        min-height: 500px !important;
 }
 
 .btn-default
@@ -48,6 +46,10 @@ body
     background-color: lighten($bg-color, 10%);
     border-color: lighten($border-color, 10%);
     color: lighten($text-color, 10%);
+}
+
+table
+{
 }
 
 table, td, th
@@ -66,7 +68,7 @@ td
     padding: 10px;
 }
 
-tr.hover {
+tr.clickable:hover {
    cursor: pointer;
-   /* whatever other hover styles you want */
+   background-color: lighten($bg-color, 10%);
 }
