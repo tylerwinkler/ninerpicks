@@ -12,8 +12,32 @@
         <p>You will need to log in in order to participate in polls or to 
         create new polls.</p>
         <div class="row">
-            <div class="col">Continue as guest</div><div class="col">Login</div>
+            <div class="col">
+            </div>
+            <div class="col">
+                <strong>Login</strong> or <strong>Continue as guest</strong>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Go to Poll:</label>
+                <input type="text" id="tag_value"></input>
+                <button id='btn'>Go</button>
+            </div>
         </div>
     </div>
 </body>
+
+<script>
+    // This function controls the Go to Poll functionality
+    $(function()
+    {
+        $('#btn').click(function()
+        {
+            window.location = '/polls/' + $('#tag_value').val()
+        })
+    })
+</script>
 </html>
