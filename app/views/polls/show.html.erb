@@ -1,8 +1,6 @@
-<h1>Niner Picks</h1>
+<div class="container"><h1>Niner Picks</h1>
 <h2><%= @poll.title %> by <%= @poll.author %></h2>
 <h3><%= @poll.question %></h3>
-
-<%= render partial: 'bootstrap' %>
 
 <%= link_to 'Back', polls_path %>
 <%= link_to 'Take Poll', {:controller=> "polls", :action => "take", :id=>@poll.id}, :class => "btn btn-lg btn-default", :type => "btn" %>
@@ -10,4 +8,4 @@
                             
 
 <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
-<%= column_chart @poll.responses.group(:answer).count %>
+<div class="col"><%= column_chart @poll.responses.group(:answer).count %></div></div>

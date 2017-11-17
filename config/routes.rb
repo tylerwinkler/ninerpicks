@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :polls do
     collection do
       get 'take'
+      get 'featured'
     end
     resources :responses
   end

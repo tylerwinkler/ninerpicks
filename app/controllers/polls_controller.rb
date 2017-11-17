@@ -1,7 +1,10 @@
 class PollsController < ApplicationController
     def index
         @polls = Poll.all.reverse
-        @user = current_user
+    end
+    
+    def featured
+        @polls = Poll.all.sample(5)
     end
         
     def show
@@ -36,7 +39,6 @@ class PollsController < ApplicationController
     def take
         @poll = Poll.find(params[:id])
     end
-        
     
     def update
         @poll = Poll.find(params[:id])
