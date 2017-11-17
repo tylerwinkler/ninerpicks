@@ -1,0 +1,13 @@
+// This file will contain all global variables, primarily colors.
+
+// UNC Print Guidelines here
+// https://advancement.uncc.edu/sites/advancement.uncc.edu/files/media/identity-standards-guide.pdf
+
+// rgb(0, 112, 60) is the official UNCC green
+// rgb(240, 203, 0) is the official UNCC gold
+
+
+$bg-color-light: rgb(0, 112, 60);
+$bg-color: desaturate(darken($bg-color-light, 5%), 20%);
+$text-color: rgb(240, 203, 0);
+$border-color: $text-color;

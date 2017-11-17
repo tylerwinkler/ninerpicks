@@ -10,28 +10,17 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+ 
+@import "bootstrap";
 
-$bg-color: #243;
-$bg-color-light: lighten($bg-color, 5%);
-
-$text-color: darken(gold, 10%);
-$border-color: $text-color;
+@import "global-variables";
+@import "bootstrap-custom";
 
 body
 {
     background-color: $bg-color;
     color: $text-color;
-}
-
-.container
-{
-    background-color: $bg-color-light;
-    color: $text-color;
-    border: solid 1px $border-color;
-    text-align: center;
 }
 
 .btn-default
