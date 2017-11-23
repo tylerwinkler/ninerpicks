@@ -40,6 +40,26 @@ body
         min-height: 500px !important;
 }
 
+.container_2
+{
+    background-color: $bg-color-light;
+    color: $text-color;
+    border: solid 3px $border-color;
+    text-align: center;
+        min-height: 50px !important;
+        max-width: 500px !important;
+}
+
+.container_3
+{
+    background-color: $bg-color-light;
+    color: $text-color;
+    border: solid 3px $border-color;
+    text-align: center;
+        min-height: 80px !important;
+        max-width: 500px !important;
+}
+
 .btn-default
 {
     background-color: $bg-color ;
