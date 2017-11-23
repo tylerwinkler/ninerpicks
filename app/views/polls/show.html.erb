@@ -4,3 +4,5 @@
 
 <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
 <%= column_chart @poll.responses.group(:answer).count %>
+
+<%= link_to 'Go Home', {:controller => 'welcome'}, :class => "btn btn-lg btn-default", :type => "btn" %>

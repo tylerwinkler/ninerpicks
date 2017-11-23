@@ -14,10 +14,10 @@
  *= require_self
  */
 
-$bg-color: #243;
-$bg-color-light: lighten($bg-color, 5%);
+$bg-color: #00703C;
+$bg-color-light: darken($bg-color, 5%);
 
-$text-color: darken(gold, 10%);
+$text-color: darken(#F0CB00, 10%);
 $border-color: $text-color;
 
 body
@@ -31,7 +31,7 @@ body
 {
     background-color: $bg-color-light;
     color: $text-color;
-    border: solid 1px $border-color;
+    border: solid 3px $border-color;
     text-align: center;
         min-height: 500px !important;
 }
