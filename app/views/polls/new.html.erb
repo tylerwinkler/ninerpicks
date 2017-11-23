@@ -3,10 +3,8 @@
 <h1>Niner Picks</h1>
 <h2>Create Poll</h2>
 
-
 <div id="form">
 <%= form_for @poll do |p| %>
-<div class="container_3">
     <table align="center">
         <tr>
             <td><%= p.label :author %></td>
@@ -21,7 +19,7 @@
             <td><%= p.text_field :question %></td>
         </tr>
     </table>
-</div> 
+
 <!--<a id="addQuestion" onClick="add()">Add Question</a>-->
     
     <p align="center">
