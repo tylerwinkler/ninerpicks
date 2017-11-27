@@ -2,10 +2,6 @@ class PollsController < ApplicationController
     def index
         @polls = Poll.all.reverse
     end
-    
-    def featured
-        @polls = Poll.all.sample(5)
-    end
         
     def show
         @poll = Poll.find(params[:id])
