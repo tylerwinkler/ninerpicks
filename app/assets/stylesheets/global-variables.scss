@@ -6,8 +6,15 @@
 // rgb(0, 112, 60) is the official UNCC green
 // rgb(240, 203, 0) is the official UNCC gold
 
-$bg-color: rgb(0, 112, 60);
-$bg-color-light: darken($bg-color, 5%);
+$uncc-green: rgb(0, 112, 60);
+$uncc-gold: rgb(240, 203, 0);
 
-$text-color: darken(#F0CB00, 10%);
-$border-color: $text-color;
+$bg-color: $uncc-green;
+$text-color: $uncc-gold;
+$border-color: $uncc-gold;
+
+$button-bg-color: lighten($uncc-green, 5%);
+
+$button-color-hover: lighten($uncc-gold, 5%);
+$button-bg-color-hover: lighten($uncc-green, 10%);
+$button-border-color-hover: ligten($uncc-gold, 5%);

@@ -24,24 +24,10 @@ body
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	
-    background-color: $bg-color;
+    background-color: darken($bg-color, 10%);
     color: $text-color;
     
     margin-top: 20px;
-}
-
-.btn-default
-{
-    background-color: $bg-color ;
-    border-color: $border-color ;
-    color: $text-color;
-}
-
-.btn-default:hover
-{
-    background-color: lighten($bg-color, 10%);
-    border-color: lighten($border-color, 10%);
-    color: lighten($text-color, 10%);
 }
 
 table
@@ -67,4 +53,13 @@ td
 tr.clickable:hover {
    cursor: pointer;
    background-color: lighten($bg-color, 10%);
+}
+
+input#tag_value
+{
+    color: $text-color;
+    background-color: $button-bg-color;
+    border: solid 1px $border-color;
+    min-width: 40px;
+    width: 40%;
 }

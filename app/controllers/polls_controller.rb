@@ -1,5 +1,6 @@
 class PollsController < ApplicationController
     def index
+        @table_title = "All Polls"
         @polls = Poll.all.reverse
     end
         
@@ -21,6 +22,8 @@ class PollsController < ApplicationController
     def create
         @poll = Poll.new(poll_params)
         
+        @poll.author = current_user.email
+        
         if @poll.save
             redirect_to polls_path
         else
@@ -32,8 +35,16 @@ class PollsController < ApplicationController
         @poll = Poll.find(params[:id])
     end
     
+    def featured
+        @table_title = "Featured Polls"
+        @polls = Poll.all.sample(5)
+    end
+    
     def take
         @poll = Poll.find(params[:id])
+        if @poll.author == current_user.email
+            redirect_to polls_path
+        end
     end
     
     def update

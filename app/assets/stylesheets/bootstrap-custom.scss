@@ -2,24 +2,24 @@
 
 .container
 {
-    background-color: $bg-color-light;
     color: $text-color;
+    background-color: $bg-color;
     border: solid 1px $border-color;
     text-align: center;
 }
 
 .btn-default
 {
-    background-color: $bg-color ;
-    border-color: $border-color ;
     color: $text-color;
+    background-color: $button-bg-color;
+    border-color: $border-color;
 }
 
 .btn-default:hover
 {
-    background-color: lighten($bg-color, 10%);
-    border-color: lighten($border-color, 10%);
-    color: lighten($text-color, 10%);
+    color: $button-color-hover;
+    background-color: $button-bg-color-hover;
+    border-color: $button-border-color-hover;
 }
 
 .table, .table th

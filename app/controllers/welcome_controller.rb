@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @featured_polls = Poll.all.sample(5)
+    redirect_to polls_path
   end
 end
