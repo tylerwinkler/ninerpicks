@@ -6,8 +6,8 @@
 // rgb(0, 112, 60) is the official UNCC green
 // rgb(240, 203, 0) is the official UNCC gold
 
+$bg-color: rgb(0, 112, 60);
+$bg-color-light: darken($bg-color, 5%);
 
-$bg-color-light: rgb(0, 112, 60);
-$bg-color: desaturate(darken($bg-color-light, 5%), 20%);
-$text-color: rgb(240, 203, 0);
+$text-color: darken(#F0CB00, 10%);
 $border-color: $text-color;

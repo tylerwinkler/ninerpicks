@@ -27,7 +27,9 @@
                 <%= link_to 'View Polls', polls_path, :class => "btn btn-lg btn-default", :type => "btn" %>
             </div>
             <div class="col">
-                
+                <label>Go to Poll:</label>
+                <input type="text" id="tag_value"></input>
+                <button id='btn'>Go</button>
             </div>
         </div>
         
@@ -58,14 +60,6 @@
                         </tr>
                     <% end %>
                 </table>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col">
-                <label>Go to Poll:</label>
-                <input type="text" id="tag_value"></input>
-                <button id='btn'>Go</button>
             </div>
         </div>
     </div>
