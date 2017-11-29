@@ -1,47 +1,41 @@
-<div class="container"><h1>Niner Picks</h1>
-<h2>Create Poll</h2>
+<div class="container">
+    <h1>Niner Picks</h1>
+    <h2>Create Poll</h2>
 
-<div id="form">
-<%= form_for @poll do |p| %>
-<table>
-    <tr>
-        <td><%= p.label :title %></td>
-        <td><%= p.text_field :title %></td>
-    </tr>
-    <tr>
-        <td><%= p.label :question %></td>
-        <td><%= p.text_field :question %></td>
-    </tr>
-</table>
-    
-<!--<a id="addQuestion" onClick="add()">Add Question</a>-->
-    
-    <p>
-        <%= p.submit %>
-    </p>
-<% end %>
-</div>
+    <% if @poll.errors.any? %>
+        <div id="error_explanation">
+            <h2>
+            <%= pluralize(@poll.errors.count, "error") %> prohibited
+            this poll from being saved:
+            </h2>
+            <div class="alert alert-danger">
+            <% @poll.errors.full_messages.each do |msg| %>
+                <p><%= msg %></p>
+            <% end %>
+            </div>
+        </div>
+    <% end %>
 
-<script>
-function add()
-{
-    var div = document.getElementById("form");
-    
-    var newParagraph = document.createElement("p");
-    
-    var newLabel = document.createElement("label");
-    newLabel.textContent = "Question ";
-    
-    var newField = document.createElement("input");
-    newField.setAttribute("type", "text");
-    
-    newParagraph.appendChild(newLabel);
-    newParagraph.appendChild(newField);
-    
-    var element = document.getElementById("addQuestion");
-    
-    element.parentNode.insertBefore(newParagraph, element);
-}
-</script>
-
+    <div id="form">
+        <%= form_for @poll do |p| %>
+            <table>
+                <tr>
+                    <td><%= p.label :title %></td>
+                    <td><%= p.text_field :title %></td>
+                </tr>
+                <tr>
+                    <td><%= p.label :question %></td>
+                    <td><%= p.text_field :question %></td>
+                </tr>
+                <tr>
+                    <td><%= p.label 'Answer Style:' %></td>
+                    <td><%= p.radio_button :answer_style, 0, :checked => true %><%= p.label 'True/False' %><br>
+                    <%= p.radio_button :answer_style, 1, :checked => false %><%= p.label 'Yes/No' %></td>
+                </tr>
+            </table>
+            <p>
+                <%= p.submit %>
+            </p>
+        <% end %>
+    </div>
 </div>

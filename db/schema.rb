@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171116154328) do
+ActiveRecord::Schema.define(version: 20171128035802) do
 
   create_table "polls", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20171116154328) do
     t.string "title"
     t.string "author"
     t.text "question"
+    t.boolean "answer_style"
   end
 
   create_table "responses", force: :cascade do |t|

@@ -1,14 +1,25 @@
-<div class="container"><h1>Niner Picks</h1>
-<h2>Taking Poll: <%= @poll.title %> by <%= @poll.author %></h2>
-<h3><%= @poll.question %></h3>
+<div class="container">
+  <h1>Niner Picks</h1>
+  <h2>Taking Poll: <%= @poll.title %> by <%= @poll.author %></h2>
+  <h3><%= @poll.question %></h3>
+  
+  <% if @poll.errors.any? %>
+    <div class="alert alert-danger">
+      <% @poll.errors.full_messages.each do |msg| %>
+        <p><%= msg %></p>
+      <% end %>
+    </div>
+  <% end %>
 
-<%= form_for([@poll, @poll.responses.build]) do |f| %>
-
-<%= f.radio_button :answer, 'Yes' %> 
-<%= f.label :answer, 'Yes' %> <br>
-<%= f.radio_button :answer, 'No' %>
-<%= f.label :answer, 'No' %>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %></div>
+  <%= form_for([@poll, @poll.responses.build]) do |f| %>
+    <%= f.radio_button :answer, @yes_choice %> 
+    <%= f.label :answer, @yes_choice %> <br>
+    
+    <%= f.radio_button :answer, @no_choice %>
+    <%= f.label :answer, @no_choice %>
+  
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+</div>

@@ -1,11 +1,25 @@
 class ResponsesController < ApplicationController
-    def create
+    
+    def new
         @poll = Poll.find(params[:poll_id])
-        @response = @poll.responses.create(response_params)
-        
-        redirect_to @poll
+
+        @response = @poll.responses.new
     end
     
+    def create
+        @poll = Poll.find(params[:poll_id])
+
+        @response = @poll.responses.new(response_params)
+        
+        if (@response.save)
+            redirect_to @poll
+        else
+            # I cant get this to return back to the take screen and display an
+            # error message to the user saying that their response was not saved
+            redirect_to @poll
+            return
+        end
+    end
         
     def index
         @poll = Poll.find(params[:poll_id])
