@@ -9,11 +9,11 @@ class PollsController < ApplicationController
     end
     
     def new
-        if !user_signed_in?
-            redirect_to '/users/sign_in', 
-            notice: 'You must be logged in to create a poll'
-            return
-        end
+        #if !user_signed_in?
+        #    redirect_to '/users/sign_in', 
+        #    notice: 'You must be logged in to create a poll'
+        #    return
+        #end
         
         @user = current_user
         
@@ -23,15 +23,16 @@ class PollsController < ApplicationController
     def create
         # The user should already be signed in but this is to make sure they
         # arent trying anything funny
-        if !user_signed_in?
-            redirect_to '/users/sign_in', 
-            notice: 'You must be logged in to create a poll'
-            return
-        end
+       
+        #if !user_signed_in?
+        #    redirect_to '/users/sign_in', 
+        #    notice: 'You must be logged in to create a poll'
+        #    return
+        #end 
         
         @poll = Poll.new(poll_params)
         
-        @poll.author = current_user.email
+        @poll.author = user_signed_in? ? current_user.email : "test"
         
         if @poll.save
             redirect_to polls_path
@@ -50,19 +51,19 @@ class PollsController < ApplicationController
     end
     
     def take
-        if !user_signed_in?
-            redirect_to '/users/sign_in', 
-            notice: 'You must be logged in to respond to a poll'
-            
-            return
-        end
+        #if !user_signed_in?
+        #    redirect_to '/users/sign_in', 
+        #    notice: 'You must be logged in to respond to a poll'
+        #    
+        #    return
+        #end
         
         @poll = Poll.find(params[:id])
         
         @yes_choice = @poll.answer_style == false ? 'True' : 'Yes'
         @no_choice = @poll.answer_style == false ? 'False' : 'No'
         
-        if @poll.author == current_user.email
+        if user_signed_in? && @poll.author == current_user.email
             @poll.errors.add :base, "You can not take your own poll"
             render 'polls/show'
         end
@@ -96,14 +97,14 @@ class PollsController < ApplicationController
     end
     
     def destroy
-        if !user_signed_in?
-            return
-        end
+        #if !user_signed_in?
+        #    return
+        #end
         
         @poll = Poll.find(params[:id])
         
         # Only the author of a poll can delete a poll
-        if @poll.author != current_user.email
+        if user_signed_in? && @poll.author != current_user.email
             @poll.errors.add :base, "You can only delete your own polls"
             render 'polls/show'
             return

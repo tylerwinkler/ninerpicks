@@ -9,12 +9,12 @@
 $uncc-green: rgb(0, 112, 60);
 $uncc-gold: rgb(240, 203, 0);
 
-$bg-color: $uncc-green;
+$bg-color: lighten($uncc-green, 5%);
 $text-color: $uncc-gold;
 $border-color: $uncc-gold;
 
-$button-bg-color: lighten($uncc-green, 5%);
+$button-bg-color: lighten($uncc-green, 10%);
 
 $button-color-hover: lighten($uncc-gold, 5%);
-$button-bg-color-hover: lighten($uncc-green, 10%);
+$button-bg-color-hover: lighten($uncc-green, 15%);
 $button-border-color-hover: ligten($uncc-gold, 5%);
