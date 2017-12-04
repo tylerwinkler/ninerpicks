@@ -1,0 +1,15 @@
+
+<label>Go to Poll:</label>
+<input type="text" id="tag_value"></input>
+<button id='btn'>Go</button>
+        
+<script>
+    // This function controls the Go to Poll functionality
+    $(function()
+    {
+        $('#btn').click(function()
+        {
+            window.location = '/polls/' + $('#tag_value').val()
+        })
+    })
+</script>
