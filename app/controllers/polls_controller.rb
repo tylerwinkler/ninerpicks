@@ -50,9 +50,18 @@ class PollsController < ApplicationController
         if !logged_in?
             redirect_to "/auth/google_oauth2"
             return
-        end 
+        end
         
         @poll = Poll.find(params[:id])
+        
+        @poll.responses.each do |r|
+            if r.user_id == current_user.id
+                @error = "You can only respond to a poll once"
+                @back = poll_path(@poll)
+                render "/error/show"
+                return
+            end
+        end
         
         @yes_choice = @poll.answer_style == false ? 'True' : 'Yes'
         @no_choice = @poll.answer_style == false ? 'False' : 'No'

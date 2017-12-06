@@ -63,3 +63,9 @@ input#tag_value
     min-width: 40px;
     width: 40%;
 }
+
+a.no-link
+{
+    text-decoration: none;
+    color: inherit;
+}

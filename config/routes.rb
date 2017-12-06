@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get 'welcome/index'
   
+  get 'error/show'
+  
   resources :polls do
     collection do
       get 'take'

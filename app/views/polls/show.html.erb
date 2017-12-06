@@ -1,5 +1,5 @@
-    <h2><%= @poll.title %> by <%= @poll.user.name %></h2>
-    <h3><%= @poll.question %></h3>
+  <h2>Question: <%= @poll.question %></h2>
+  <h3>Author: <%= @poll.user.name %></h3>
 
   <% if @poll.errors.any? %>
     <div class="alert alert-danger">

@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 20171206174605) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "title"
     t.text "question"
     t.boolean "answer_style"
     t.index ["user_id"], name: "index_polls_on_user_id"
@@ -24,10 +23,12 @@ ActiveRecord::Schema.define(version: 20171206174605) do
 
   create_table "responses", force: :cascade do |t|
     t.integer "poll_id"
+    t.integer "user_id"
     t.text "answer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["poll_id"], name: "index_responses_on_poll_id"
+    t.index ["user_id"], name: "index_responses_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

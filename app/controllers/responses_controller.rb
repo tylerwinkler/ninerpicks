@@ -11,6 +11,8 @@ class ResponsesController < ApplicationController
 
         @response = @poll.responses.new(response_params)
         
+        @response.user_id = current_user.id
+        
         if (@response.save)
             redirect_to @poll
         else

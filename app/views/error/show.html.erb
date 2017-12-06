@@ -1,0 +1,8 @@
+<h2>Error</h2>
+
+<% if @error.present? %>
+    <p><%= @error %></p>
+    <%= link_to 'Go Back', @back %>
+<% else %>
+    <p>There was no error</p>
+<% end %>

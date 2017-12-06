@@ -19,8 +19,8 @@
       <div class="row">
         <div class = "col"></div>
         <div class = "col">
-            <%= image_tag 'uncc_logo' %>
-            <h1>Niner Picks</h1>
+            <%= link_to image_tag('uncc_logo'), polls_path %>
+            <h1><%= link_to 'Niner Picks', polls_path, :class => "no-link" %></h1>
         </div>
         <div class = "col">
           <% if current_user %>
