@@ -3,14 +3,14 @@
     <th colspan="4"><%= @table_title %></th>
 </tr>
 <tr>
-    <th>Poll Name</th>
+    <th>Poll Question</th>
     <th>Poll Author</th>
     <th>Date Created</th>
     <th>Total Responses</th>
 </tr>
 <% @polls.each do |poll| %>
     <tr class="clickable" data-link="<%= poll_path(poll) %>">
-        <td><%= poll.question.first(30) %></td>
+        <td><%= poll.question.first(64) %></td>
         <td><%= poll.user.name %></td>
         <td><%= poll.created_at %></td>
         <td><%= poll.responses.count %></td>
