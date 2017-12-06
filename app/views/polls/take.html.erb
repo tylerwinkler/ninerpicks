@@ -1,6 +1,4 @@
-<div class="container">
-  <h1>Niner Picks</h1>
-  <h2>Taking Poll: <%= @poll.title %> by <%= @poll.author %></h2>
+  <h2>Taking Poll: <%= @poll.title %> by <%= @poll.user.name %></h2>
   <h3><%= @poll.question %></h3>
   
   <% if @poll.errors.any? %>
@@ -22,4 +20,3 @@
       <%= f.submit %>
     </p>
   <% end %>
-</div>

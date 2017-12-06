@@ -1,39 +1,30 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            
-        </div>
-        <div class="col">
-            <%= image_tag 'uncc_logo' %>
-            <h1>Niner Picks</h1>
-        </div>
-        <div class="col">
-            <%= render partial: 'userbar' %>
-        </div>
-    </div>
+<% content_for :title do %>
+    Niner Picks - All Polls
+<% end %>
+
+<% content_for :container_style do %>
+<% end %>
     
-    <div class="row">
-        <div class="col">
-            <%= link_to 'Create Poll', new_poll_path, :class => "btn btn-lg btn-default", :type => "btn" %>
-        </div>
-        <div class="col">
-            <%= link_to 'View Featured Polls', {:controller => 'polls', :action => 'featured'}, :class => "btn btn-lg btn-default", :type => "btn" %>
-        </div>
-        <div class="col">
-            
-        </div>
+<div class="row">
+    <div class="col">
+        <%= link_to 'Create Poll', new_poll_path, :class => "btn btn-lg btn-default", :type => "btn" %>
     </div>
-    
-    <div class="row">
-        <div class="col">
-            <%= render partial: 'table' %>
-        </div>
+    <div class="col">
+        <%= link_to 'View Featured Polls', {:controller => 'polls', :action => 'featured'}, :class => "btn btn-lg btn-default", :type => "btn" %>
     </div>
-    
-    <div class="row">
-        <div class="col">
-            <%= render partial: 'go_to_poll' %>
-        </div>
+    <div class="col">
+        
     </div>
-    
+</div>
+
+<div class="row">
+    <div class="col">
+        <%= render partial: 'table' %>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <%= render partial: 'go_to_poll' %>
+    </div>
 </div>

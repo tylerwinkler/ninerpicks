@@ -33,7 +33,7 @@ gem 'jbuilder'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'chartkick'
-gem 'devise'
+gem 'omniauth-google-oauth2'
 
 gem 'jquery-rails'
 gem 'bootstrap'

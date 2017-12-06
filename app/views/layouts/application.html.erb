@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ninerpicks</title>
+    <title>
+      <% if content_for? :title %>
+        <%= yield :title %>
+      <% else %>
+        Niner Picks
+      <% end %>
+    </title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +15,25 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container" style="<%= if content_for? :container_style then yield :container_style end %>">
+      <div class="row">
+        <div class = "col"></div>
+        <div class = "col">
+            <%= image_tag 'uncc_logo' %>
+            <h1>Niner Picks</h1>
+        </div>
+        <div class = "col">
+          <% if current_user %>
+            Signed in as <strong><%= current_user.name %>!</strong>
+            <%= link_to 'Sign out', signout_path, :class => "btn btn-lg btn-default", :type => "btn" %>
+          <% else %>
+            Not signed in
+            <%= link_to 'Sign in with Google', "/auth/google_oauth2", :class => "btn btn-lg btn-default", :type => "btn" %>
+          <% end %>
+        </div>
+      </div>
+      
+      <%= yield %>
+    </div>
   </body>
 </html>

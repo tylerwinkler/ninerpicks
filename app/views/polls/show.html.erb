@@ -1,5 +1,4 @@
-<div class="container"><h1>Niner Picks</h1>
-    <h2><%= @poll.title %> by <%= @poll.author %></h2>
+    <h2><%= @poll.title %> by <%= @poll.user.name %></h2>
     <h3><%= @poll.question %></h3>
 
   <% if @poll.errors.any? %>
@@ -19,4 +18,3 @@
     <div class="col">
         <%= pie_chart @poll.responses.group(:answer).count %>
     </div>
-</div>

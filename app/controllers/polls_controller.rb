@@ -9,13 +9,10 @@ class PollsController < ApplicationController
     end
     
     def new
-        #if !user_signed_in?
-        #    redirect_to '/users/sign_in', 
-        #    notice: 'You must be logged in to create a poll'
-        #    return
-        #end
-        
-        @user = current_user
+        if !logged_in?
+            redirect_to "/auth/google_oauth2"
+            return
+        end 
         
         @poll = Poll.new
     end
@@ -24,15 +21,14 @@ class PollsController < ApplicationController
         # The user should already be signed in but this is to make sure they
         # arent trying anything funny
        
-        #if !user_signed_in?
-        #    redirect_to '/users/sign_in', 
-        #    notice: 'You must be logged in to create a poll'
-        #    return
-        #end 
+        if !logged_in?
+            redirect_to "/auth/google_oauth2"
+            return
+        end 
         
         @poll = Poll.new(poll_params)
         
-        @poll.author = user_signed_in? ? current_user.email : "test"
+        @poll.user_id = current_user.id
         
         if @poll.save
             redirect_to polls_path
@@ -51,35 +47,28 @@ class PollsController < ApplicationController
     end
     
     def take
-        #if !user_signed_in?
-        #    redirect_to '/users/sign_in', 
-        #    notice: 'You must be logged in to respond to a poll'
-        #    
-        #    return
-        #end
+        if !logged_in?
+            redirect_to "/auth/google_oauth2"
+            return
+        end 
         
         @poll = Poll.find(params[:id])
         
         @yes_choice = @poll.answer_style == false ? 'True' : 'Yes'
         @no_choice = @poll.answer_style == false ? 'False' : 'No'
         
-        if user_signed_in? && @poll.author == current_user.email
-            @poll.errors.add :base, "You can not take your own poll"
-            render 'polls/show'
-        end
     end
     
     def update
-        if !user_signed_in?
-            redirect_to '/users/sign_in', 
-            notice: 'You must be logged in to edit a poll'
+        if !logged_in?
+            redirect_to "/auth/google_oauth2"
             return
-        end
+        end 
         
         @poll = Poll.find(params[:id])
         
         # Only the author of a poll can edit a poll
-        if @poll.author != current_user.email
+        if @poll.user_id != current_user.id
             @poll.error.add :base, "You can only edit your own polls"
             render 'polls/show'
         end
@@ -97,14 +86,15 @@ class PollsController < ApplicationController
     end
     
     def destroy
-        #if !user_signed_in?
-        #    return
-        #end
+        if !logged_in?
+            redirect_to "/auth/google_oauth2"
+            return
+        end 
         
         @poll = Poll.find(params[:id])
         
         # Only the author of a poll can delete a poll
-        if user_signed_in? && @poll.author != current_user.email
+        if @poll.user_id != current_user.id
             @poll.errors.add :base, "You can only delete your own polls"
             render 'polls/show'
             return
