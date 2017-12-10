@@ -15,6 +15,9 @@
                                 
     
     <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+    
     <div class="col">
+        <br>
         <%= pie_chart @poll.responses.group(:answer).count %>
+        <br>
     </div>

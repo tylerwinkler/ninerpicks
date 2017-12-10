@@ -19,10 +19,12 @@
       <div class="row">
         <div class = "col"></div>
         <div class = "col">
+          <br>
             <%= link_to image_tag('uncc_logo'), polls_path %>
             <h1><%= link_to 'Niner Picks', polls_path, :class => "no-link" %></h1>
         </div>
         <div class = "col">
+          <br>
           <% if current_user %>
             Signed in as <strong><%= current_user.name %>!</strong>
             <%= link_to 'Sign out', signout_path, :class => "btn btn-lg btn-default", :type => "btn" %>

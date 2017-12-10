@@ -16,7 +16,7 @@
 
     <div id="form">
         <%= form_for @poll do |p| %>
-            <table>
+            <table align = "center">
                 <tr>
                     <td><%= p.label :question %></td>
                     <td><%= p.text_field :question %></td>
@@ -27,6 +27,7 @@
                     <%= p.radio_button :answer_style, 1, :checked => false %><%= p.label 'Yes/No' %></td>
                 </tr>
             </table>
+            <br>
             <p>
                 <%= p.submit %>
             </p>
