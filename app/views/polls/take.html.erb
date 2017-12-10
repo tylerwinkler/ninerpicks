@@ -1,7 +1,6 @@
   <h2>Question: <%= @poll.question %></h2>
   <h3>Author: <%= @poll.user.name %></h3>
  
-
   <% if @poll.errors.any? %>
     <div class="alert alert-danger">
       <% @poll.errors.full_messages.each do |msg| %>

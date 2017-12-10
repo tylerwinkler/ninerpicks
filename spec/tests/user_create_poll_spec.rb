@@ -5,19 +5,16 @@ feature "User creates a poll" do
         visit polls_path
         expect(page).to have_content("All Polls")
         click_link "Create Poll"
-
-        expect(page).to have_content("Title")
+        
         expect(page).to have_content("Question")
     end
     
     scenario "User can create a poll" do
-        visit polls_path
-        click_link "Create Poll"
-        
-        fill_in('Title', :with => 'This is a test poll')
+        visit new_poll_path
         fill_in('Question', :with => 'This is a test question')
+
         click_button("Create Poll")
-        
-        expect(page).to have_content("This is a test poll")
+       
+        expect(page).to have_content("This is a test question")
     end
 end
