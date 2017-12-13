@@ -1,5 +1,6 @@
   <h2>Question: <%= @poll.question %></h2>
   <h3>Author: <%= @poll.user.name %></h3>
+  <h4>ID: <%= @poll.id %></h4>
 
   <% if @poll.errors.any? %>
     <div class="alert alert-danger">

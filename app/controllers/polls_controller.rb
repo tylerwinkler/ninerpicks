@@ -5,7 +5,13 @@ class PollsController < ApplicationController
     end
         
     def show
-        @poll = Poll.find(params[:id])
+        @poll = Poll.find_by_id(params[:id])
+        if (@poll == nil)
+            @error = "This poll does not exist"
+            @back = polls_path
+            render 'error/show'
+            return
+        end
     end
     
     def new
