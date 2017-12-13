@@ -8,7 +8,7 @@ feature "User can view polls" do
         expect(page).to have_content ("All Polls")
         expect(page).to have_content ("View Featured Polls")
         
-        expect(page).to have_content("test")
+        expect(page).to have_content("This is a test question")
     end
     
     scenario "User is able to see a list of featured polls" do
@@ -19,7 +19,7 @@ feature "User can view polls" do
     end
     
     scenario "User is able to select and view an individual poll" do
-        visit '/polls/2'
+        visit '/polls/1'
         
         expect(page).to have_content "Take Poll"
         expect(page).to have_content "Delete Poll"

@@ -28,7 +28,11 @@ class PollsController < ApplicationController
         
         @poll = Poll.new(poll_params)
         
-        @poll.user_id = current_user.id
+        if (@@test_mode)
+            @poll.user_id = 1
+        else
+            @poll.user_id = current_user.id
+        end
         
         if @poll.save
             redirect_to polls_path

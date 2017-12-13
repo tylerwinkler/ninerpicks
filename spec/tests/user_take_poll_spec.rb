@@ -2,8 +2,8 @@ require "rails_helper"
 
 feature "User can respond to polls" do
     scenario "User takes their poll" do
-        visit '/polls/2'
-        expect(page).to have_content("testing")
+        visit '/polls/1'
+        expect(page).to have_content("Question: This is a test question")
         click_link "Take Poll"
         
         expect(page).to have_content("True")
@@ -12,7 +12,7 @@ feature "User can respond to polls" do
         
         click_button "Create Response"
         
-        visit '/polls/2/responses'
+        visit '/polls/1/responses'
 
         page.should have_content('True')
     end
